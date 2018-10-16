@@ -1,0 +1,5 @@
+#!/bin/bash
+if [[ $(git symbolic-ref --short HEAD) == $1 ]]; then
+  shift
+  $@
+fi

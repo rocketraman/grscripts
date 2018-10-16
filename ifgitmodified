@@ -1,0 +1,4 @@
+#!/bin/bash
+if [[ $(git status --porcelain) ]]; then
+  $@
+fi

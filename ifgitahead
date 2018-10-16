@@ -1,0 +1,4 @@
+#!/bin/bash
+if [[ $(git --no-pager diff $(git rev-parse @{u})...$(git rev-parse HEAD)) ]]; then
+  $@
+fi
